@@ -44,3 +44,21 @@ let val = "20"
    console.log(numConBol)
    let numConBol1 = Boolean(emp);
    console.log(numConBol1)
+
+
+   console.log(+true);
+   console.log(+"")
+
+   //comparision 
+   console.log("2">1); // 2 gets convert into num results in ans as true 
+   // awlays keep same data type 
+
+   console.log(null>0)
+   console.log(null<0)
+   console.log(null==0) // equality check 
+
+   console.log(null>=0) 
+   console.log(null<=0)  // comparsion check
+   //comparsion checks behave different then equality  so >= here it converts null to 0
+//null ke jaga undefined val is false
+
