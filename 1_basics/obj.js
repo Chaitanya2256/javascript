@@ -49,5 +49,45 @@ console.log(user.greet2());
 //const abc = new Object(); // singelton obj
 const abc ={}
 abc.id=102
-abc.name=sam
+abc.name="sam"
 abc.log=false
+
+const obj1 ={1:"a" ,2:"b"}
+const obj2 ={3:"c" ,4:"d"}
+
+const obj3 = Object.assign({},obj1,obj2)
+//console.log(obj3);
+
+const obj4 ={...obj1,...obj2}
+//console.log(obj4); //sp operator
+
+const users =[ //array of objects
+    {
+        id:200,
+        email:"1@gmail.com"
+
+    },
+]
+
+//console.log(Object.keys(user));
+//console.log(Object.values(user));
+
+console.log(obj1.hasOwnProperty("isloogedin")); //does the prop exists or not
+
+
+//destructuring of obj
+const course = { 
+    name:"js",
+    price:"infinity",
+    duration:"6 months"
+}
+
+//clean code
+console.log(course.duration);
+//destructure 
+const {duration: du} =course;
+const {price} =course;
+console.log(price);
+
+//value returns as json while req from server
+//also we get in arrays of obj
