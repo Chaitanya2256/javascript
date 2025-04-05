@@ -1,0 +1,91 @@
+document.getElementsByClassName("heading").innerHtml="hello"
+'hello'
+document.getElementById('title').id
+'title'
+document.getElementById('title').class
+undefined
+document.getElementById('title').className
+'heading'
+document.getElementById('title').getAttribute
+ƒ getAttribute() { [native code] }
+document.getElementById('title').getAttribute('id')
+'title'
+document.getElementById('title').getAttribute('class')
+'heading'
+
+
+consle
+document.getElementsByClassName("heading").innerHtml=hello
+VM430:1 Uncaught ReferenceError: hello is not defined
+    at <anonymous>:1:54
+(anonymous) @ VM430:1
+document.getElementsByClassName("heading").innerHtml="hello"
+'hello'
+document.getElementById('title').id
+'title'
+document.getElementById('title').class
+undefined
+document.getElementById('title').className
+'heading'
+document.getElementById('title').getAttribute
+ƒ getAttribute() { [native code] }
+document.getElementById('title').getAttribute('id')
+'title'
+document.getElementById('title').getAttribute('class')
+'heading'
+document.getElementById('title').setAttribute('class','test')
+undefined
+
+
+//adding class
+itle.style.backgroundColor='blue'
+'blue'
+title.style.border='red';
+'red'
+title.style.border='2px solid red';
+'2px solid red'
+title.style.margin='5px';
+'5px'
+title.style.margin-top='5px';
+VM1282:1 Uncaught SyntaxError: Invalid left-hand side in assignmentUnderstand this errorAI
+title.style.marginTop='15px';
+'15px'
+title.style.norderRadius='15px';
+'15px'
+title.style.borderRadius='15px';
+'15px'
+
+
+
+
+//list
+document.querySelectorAll('li')
+NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+let green = document.querySelectorAll('li')
+undefined
+
+const templist = document.querySelectorAll('li')
+undefined
+temp
+
+templist[0].style.color = 'green'
+'green'
+templist.forEach((li) => li.style.color = 'blue')
+undefined
+
+
+// now if we give class to li and use for each cannot be possible but we need to use it soconvert it into array using 
+
+// Array.from('arr')
+templist[0].style.color = 'green'
+'green'
+templist.forEach((li) => li.style.color = 'blue')
+undefined
+document.getElementsByClassName('l')
+HTMLCollection []length: 0[[Prototype]]: HTMLCollection
+document.getElementsByClassName('i')
+HTMLCollection []length: 0[[Prototype]]: HTMLCollection
+const arr =document.getElementsByClassName('i')
+undefined
+Array.from('arr')
+(3) ['a', 'r', 'r']
