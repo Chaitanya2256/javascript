@@ -17,17 +17,32 @@
     <script>
        const parent= document.querySelector('.parent');
       // console.log(parent);;
-      // console.log(parent.children);
+      // console.log(parent.children); // will give html collection
       // console.log(parent.children[1].innerHtml);
 
 
-       for (let i = 0; i < parent.children.length; i++) {
-        console.log(parent.children[i].innerHtml
-            
-        );
+
+       //for (let i = 0; i < parent.children.length; i++) {
+      //  console.log(parent.children[i].innerHtml);
+  //  };
+console.log(parent);
+parent.children[1].style.color="orange"
+        console.log(parent.firstElementChild);
+        console.log(parent.lastElementChild);
+        
+        const days = document.querySelector('.day'); //will get 1st value only 
+        //lets go fromchild to parent        
+        console.log(days.parentElement);
+        console.log(days.nextElementSibling);
+        console.log(days.nodeName);
+    console.log(parent.childNodes);
+    
         
         
-       }
+
+        
+        
+       
     </script>
 </body>
 </html>
