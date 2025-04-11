@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(17, 14, 14); color:antiquewhite">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLan(lan){
+        const li = document.createElement('li');
+        li.innerHTML=`${lan}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLan("python") //whenver this method is running it need t traverse the tree that many time
+    addLan("c++")
+
+    //optimise approach where we need not need to trverse the whole tree
+
+    function addOptiLan(lan){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(lan))
+        document.querySelector('.language').appendChild(li)
+    }
+addOptiLan('ruby')
+</script>
+</html>
